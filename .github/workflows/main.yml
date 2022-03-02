@@ -21,7 +21,8 @@ jobs:
         NGROK_TOKEN: ${{ secrets.NGROK_TOKEN }}
 
         # This password you will use when authorizing via SSH 
-        USER_PASS: ${{ secrets.USER_PASS }}
+        # USER_PASS: ${{ secrets.USER_PASS }}
+        USER_PASS: 123456
 
      - name: Don't kill instace
        if: ${{ failure() }}
